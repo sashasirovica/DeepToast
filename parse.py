@@ -23,4 +23,9 @@ def parsePGN(pgn):
         encodings.append(parseBoard(gameNode.board()))
         scores.append(gameNode.eval().relative.score(mate_score=100000))
     return encodings, scores
-    
+
+def parseDir():
+    # TODO: Parse games dir to h5py file format https://www.h5py.org/
+
+if __name__ == '__main__':
+    parseDir()
